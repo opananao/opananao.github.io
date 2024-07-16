@@ -1,0 +1,54 @@
+<!-- <div id="root"></div> -->
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style> 
+      p:nth-child(3n+2) {
+        background: red;
+      }
+      .relative-pos {
+        width: 50%;
+
+      }
+      .np-child {
+        width: 40%;
+        border: 2px solid #000;
+      }
+      .relative-pos {
+        width: 50$;
+        height: 200px;
+        border: 2px solid #000;
+        margin: 10px;
+        text-align: center; 
+        position: relative;
+      }
+      .fixed-pos {
+        width: 30%;
+        height:100px;
+        border: 2px solid #000;
+        margin: 10px;
+        text-align: center; 
+        position: fixed;
+        top: 0;
+      }
+      </style>
+    </head>
+    <body>
+      <div class= 'np-child'>
+        <p>The first paragraph.</p>
+        <p>The second paragraph.</p>
+        <p>The third paragraph.</p>
+        <p>The fourth paragraph.</p>
+        <p>The fifth paragraph.</p>
+        <p>The sixth paragraph.</p>
+        <p>The seventh paragraph.</p>
+        <p>The eight paragraph.</p>
+      </div>
+      <div class='relative-pos'>
+        relative box
+        <div class= 'fixed-pos'>
+          Fixed Box
+        </div>
+      </div>
+  </body>
+</html>
